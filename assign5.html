@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+  font: 16px Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.header { position: absolute; top: 20px; left: 20px; }
+
+.logo, .counter-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo { background: #333; font-size: 20px; }
+
+h1 { margin-top: 80px; font-size: 32px; }
+
+.counter-circle {
+  width: 150px;
+  height: 150px;
+  background: #4CAF50;
+  font-size: 48px;
+  margin: 30px 0;
+}
+
+.buttons { display: flex; gap: 20px; }
+
+button { padding: 10px 20px; font-size: 24px; cursor: pointer; }
+
+.warning { margin-top: 20px; color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">logo</div>
+  </div>
+
+  <h1>Counter App</h1>
+
+  <div class="counter-circle" id="counter">1</div>
+
+  <div class="buttons">
+    <button onclick="decrease()">-</button>
+    <button onclick="increase()">+</button>
+  </div>
+
+
+
+  <script>
+    
+  let count = 1;
+
+  function updateDisplay() {
+    document.getElementById('counter').textContent = count;
+  }
+
+  function increase() {
+    if (count >= 9) {
+      alert(" Maximum count is 9!");
+    } else {
+      count++;
+      updateDisplay();
+    }
+  }
+
+  function decrease() {
+    if (count <= 1) {
+      alert(" Minimum count is 1!");
+    } else {
+      count--;
+      updateDisplay();
+    }
+  }
+
+  updateDisplay();
+
+  </script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Cart Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px;
+    }
+
+    .cart {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 250px;
+    }
+
+    .cart img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .cart button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cart" id="cart1">
+    <img src="1h.jpeg" id="img1">
+    <br>
+    
+    <button onclick="changeImageToSecond()">Change</button>
+  </div>
+
+  <div class="cart" id="cart2">
+    <img src="flip.png" id="img2">
+    <br>
+    <button onclick="hideImage('img2')">Hide</button>
+  </div>
+
+  <script>
+    function hideImage(id) {
+      const img = document.getElementById(id);
+      img.style.display = 'none';
+    }
+
+    function changeImageToSecond() {
+      const img1 = document.getElementById('img1');
+      const img2 = document.getElementById('img2');
+      img1.src = img2.src;
+      
+
+      img1.style.display = 'block'; 
+    }
+  </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+</body>
+</html>

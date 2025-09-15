@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sound Buttons</title>
+</head>
+<body>
+  <!-- Buttons -->
+  <button onclick="playSoundAndGo('https://example.com/page1')">Button 1</button>
+  <button onclick="playSoundAndGo('https://example.com/page2')">Button 2</button>
+  <button onclick="playSoundAndGo('https://example.com/page3')">Button 3</button>
+
+  <!-- Hidden audio element -->
+  <audio id="attackSound" src="attack_h.mp3" preload="auto"></audio>
+
+  <script>
+    function playSoundAndGo(link) {
+      const sound = document.getElementById('attackSound');
+      sound.play();
+      // Delay navigation until sound starts
+      setTimeout(() => {
+        window.location.href = link;
+      }, 500); // Adjust delay as needed
+    }
+  </script>
+</body>
+</html>
